@@ -1,5 +1,6 @@
 import SVG1, { SVG2 } from "../assets/svg/svg";
 import Button, { Button2 } from "./Button";
+import Navbar from "./NavigationBar";
 
 export default function HeroSection() {
   return (
@@ -8,6 +9,7 @@ export default function HeroSection() {
         id="home"
         className=" relative overflow-hidden bg-primary pt-[120px] md:pt-[130px] lg:pt-[160px]"
       >
+        <Navbar />
         <div className="container">
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4">

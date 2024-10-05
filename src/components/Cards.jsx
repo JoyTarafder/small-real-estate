@@ -1,9 +1,50 @@
 /* eslint-disable react/prop-types */
 
+import { BathroomsSVG, BedroomsSVG } from "../assets/svg/svg";
 import SVG_card_1 from "../assets/svg/svg_card_1";
 import SVG_card_2 from "../assets/svg/svg_card_2";
 import SVG_card_3 from "../assets/svg/svg_card_3";
 import SVG_card_4 from "../assets/svg/svg_card_4";
+
+export function ItemCard({homeName, price, image}) {
+  return (
+    <>
+      <div className="p-4 bg-white rounded-lg border border-gray-600/10">
+        <img
+          src={image}
+          alt="property"
+        />
+
+        <div className="p-6">
+          <h4 className="text-2xl font-bold cursor-pointer">
+          {homeName}
+          </h4>
+          {/* <div>2 beds &bull; 2 baths</div> */}
+          <div className="mt-2">
+            <span className="text-xl font-extrabold text-blue-600">
+              ${price}
+            </span>{" "}
+            /M
+          </div>
+        </div>
+        <div className="flex justify-between p-4 text-gray-700 border-t border-gray-300">
+          <div className="flex items-center">
+            <BedroomsSVG/>
+            <p>
+              <span className="font-bold text-gray-900">3</span> Bedrooms
+            </p>
+          </div>
+          <div className="flex items-center">
+            <BathroomsSVG/>
+            <p>
+              <span className="font-bold text-gray-900">2</span> Bathrooms
+            </p>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
 
 function Card({ headerText, paragraphText, content }) {
   return (
@@ -37,19 +78,24 @@ export default function Cards() {
       <div className="md:flex max-lg flex-wrap ">
         <Card
           headerText="Premium Property Listings"
-          paragraphText="Discover an array of hand-picked properties that meet the highest standards of luxury and comfort." content={<SVG_card_4 />} />
+          paragraphText="Discover an array of hand-picked properties that meet the highest standards of luxury and comfort."
+          content={<SVG_card_4 />}
+        />
 
         <Card
           headerText="Personalized Property Matching"
-          paragraphText="Our advanced matching system pairs you with properties that align with your specific needs and desires" content={<SVG_card_1 />}
+          paragraphText="Our advanced matching system pairs you with properties that align with your specific needs and desires"
+          content={<SVG_card_1 />}
         />
         <Card
           headerText="Expert Guidance and Support"
-          paragraphText="Benefit from the expertise of our dedicated team of real estate professionals." content={<SVG_card_2 />}
+          paragraphText="Benefit from the expertise of our dedicated team of real estate professionals."
+          content={<SVG_card_2 />}
         />
         <Card
           headerText="Virtual Tours"
-          paragraphText="Take advantage of our cutting-edge virtual tours and 3D walkthroughs to explore properties from the comfort of your home." content={<SVG_card_3 />}
+          paragraphText="Take advantage of our cutting-edge virtual tours and 3D walkthroughs to explore properties from the comfort of your home."
+          content={<SVG_card_3 />}
         />
       </div>
     </>
