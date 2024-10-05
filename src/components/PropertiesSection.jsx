@@ -17,6 +17,14 @@ export default function PropertiesSection() {
           </p>
         </div>
       </div>
+
+      {/*The code you provided is rendering a grid layout with multiple `ItemCard` components inside
+      it. Each `ItemCard` component represents a property listing with details such as the property
+      name, price, and an image. The grid layout is responsive, with different column configurations
+      based on the screen size (1 column for small screens, 2 columns for medium screens, and 3
+      columns for large screens). The `justify-center` class is used to horizontally center the grid
+      within its container. */}
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
         <ItemCard
           homeName="Azure Haven Villa"
