@@ -1,3 +1,7 @@
+import SVG_card_1 from "../assets/svg/svg_card_1";
+import SVG_card_2 from "../assets/svg/svg_card_2";
+import SVG_card_3 from "../assets/svg/svg_card_3";
+import SVG_card_4 from "../assets/svg/svg_card_4";
 import Cards from "./Cards";
 
 export default function FeatureSection() {
@@ -21,7 +25,29 @@ export default function FeatureSection() {
               </div>
             </div>
           </div>
-          <Cards />
+          <div className="md:flex max-lg flex-wrap ">
+            <Cards
+              headerText="Premium Property Listings"
+              paragraphText="Discover an array of hand-picked properties that meet the highest standards of luxury and comfort."
+              content={<SVG_card_4 />}
+            />
+
+            <Cards
+              headerText="Personalized Property Matching"
+              paragraphText="Our advanced matching system pairs you with properties that align with your specific needs and desires"
+              content={<SVG_card_1 />}
+            />
+            <Cards
+              headerText="Expert Guidance and Support"
+              paragraphText="Benefit from the expertise of our dedicated team of real estate professionals."
+              content={<SVG_card_2 />}
+            />
+            <Cards
+              headerText="Virtual Tours"
+              paragraphText="Take advantage of our cutting-edge virtual tours and 3D walkthroughs to explore properties from the comfort of your home."
+              content={<SVG_card_3 />}
+            />
+          </div>
         </div>
       </section>
     </>
