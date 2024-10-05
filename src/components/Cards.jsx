@@ -34,7 +34,7 @@ function Card({ headerText, paragraphText, content }) {
 export default function Cards() {
   return (
     <>
-      <div className="md:flex max-lg flex-wrap  mx-auto   md:max-w-screen-xl">
+      <div className="md:flex max-lg flex-wrap ">
         <Card
           headerText="Premium Property Listings"
           paragraphText="Discover an array of hand-picked properties that meet the highest standards of luxury and comfort." content={<SVG_card_4 />} />
