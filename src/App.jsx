@@ -6,6 +6,7 @@ export default function App() {
     <>
       <HeroSection />
       <FeatureSection />
+      {/* Add your other components here */}
     </>
   );
 }
