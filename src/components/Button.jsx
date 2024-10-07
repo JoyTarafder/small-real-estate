@@ -1,4 +1,12 @@
 /* eslint-disable react/prop-types */
+export function FooterLink({FooterLinkName}) {
+    return <><a
+    href="javascript:void(0)"
+    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+  >
+    {FooterLinkName}
+  </a></>;
+  }
 export function Button3({buttonName}) {
   return (
     <>
