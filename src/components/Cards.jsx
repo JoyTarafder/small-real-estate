@@ -8,6 +8,8 @@ import { BathroomsSVG, BedroomsSVG } from "../assets/svg/svg";
  * @returns The `ItemCard` component is being returned, which displays information about a property
  * such as the home name, price, image, number of bedrooms, and number of bathrooms.
  */
+
+
 export function ItemCard({ homeName, price, image }) {
   return (
     <>

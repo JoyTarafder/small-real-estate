@@ -19,11 +19,11 @@ export function Button3({buttonName}) {
     </>
   );
 }
-export function Button2({ ButtonName }) {
+export function Button2({ ButtonName, bgColor="bg-white" }) {
   return (
     <a
       href="#"
-      className="inline-flex items-center justify-center rounded-md bg-white px-7 py-[14px] text-center text-base font-medium text-dark shadow-1 transition duration-300 ease-in-out hover:bg-gray-200 hover:text-gray-600"
+      className={`inline-flex items-center justify-center rounded-md  px-7 py-[14px] text-center text-base font-medium text-dark shadow-1 transition duration-300 ease-in-out hover:bg-gray-200 hover:text-gray-600 ${bgColor}`}
     >
       {ButtonName}
     </a>
